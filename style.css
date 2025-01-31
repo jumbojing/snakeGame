@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF5722;
+    --background: #f0f0f0;
+    --border-color: #cccccc;
+    --text-color: #333333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background);
+    font-family: Arial, sans-serif;
+}
+
+.control-panel {
+    margin: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+select, button {
+    padding: 8px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.active {
+    border-color: var(--primary-color);
+}
+
+#gameCanvas {
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+    background: white;
+}
+
+/* 经典主题 */
+[data-theme="classic"] {
+    --primary-color: #4CAF50;
+    --secondary-color: #FF5722;
+    --background: #f0f0f0;
+    --border-color: #999;
+}
+
+/* 霓虹主题 */
+[data-theme="neon"] {
+    --primary-color: #7B68EE;
+    --secondary-color: #FF00FF;
+    --background: #1a1a1a;
+    --border-color: #4B0082;
+    --text-color: #fff;
+}
+
+/* 自然主题 */
+[data-theme="nature"] {
+    --primary-color: #8FBC8F;
+    --secondary-color: #556B2F;
+    --background: #F5F5DC;
+    --border-color: #DEB887;
+}

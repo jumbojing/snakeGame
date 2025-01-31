@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能贪吃蛇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="control-panel">
+        <select id="difficulty">
+            <option value="150">简单模式</option>
+            <option value="100" selected>普通模式</option>
+            <option value="60">困难模式</option>
+        </select>
+        <div class="theme-switcher">
+            <button data-theme="classic" class="active">经典</button>
+            <button data-theme="neon">霓虹</button>
+            <button data-theme="nature">自然</button>
+        </div>
+        <div class="score">得分: <span id="score">0</span></div>
+        <div class="health">血量: <span id="health">100</span>%</div>
+        <button id="infiniteMode">无限模式</button>
+        <button id="revive" style="display:none;">复活（剩余3次）</button>
+        <button id="pause">暂停</button>
+        <select id="foodCount">
+            <option value="5">5个食物</option>
+            <option value="10" selected>10个食物</option>
+            <option value="20">20个食物</option>
+        </select>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
